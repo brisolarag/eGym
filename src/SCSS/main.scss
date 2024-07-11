@@ -1,41 +1,29 @@
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+// configuration:
+@import './vendors/vendor.scss';
+
+@import './pages/default-pages.scss';
+
+@import './layout/footer.scss';
+@import './layout/header.scss';
+
+// fonts:
+@import './base/_typography.scss';
+@import './base/fonts/_roboto.scss';
+@import './base/fonts/kanit.scss';
 
 html, body {
     height: 100vh;
     margin: 0;
 }
+
 body {
     display: flex;
     flex-direction: column;
-    app-root {
-        footer {
-            margin: 0;
-        }
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-    }
-}
 
-header {
-    app-header {
-        width: 100%;
-        height: 100%;
-    }
-    width: 100%;
-    height: 65px;
 }
-
-footer {
-    app-footer {
-        width: 100%;
-        height: 100%;
-    }
-    width: 100%;
-    height: 65px;
-}
-
 
 main {
     flex: 1;
 }
+
+
